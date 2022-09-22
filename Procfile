@@ -1,4 +1,4 @@
-postdeploy: npm run migration,
+postdeploy: npm run migration
 web: npm run start
 worker: npm run worker
 
