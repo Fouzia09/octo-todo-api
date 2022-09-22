@@ -2,6 +2,10 @@ require("dotenv").config()
 const express = require("express")
 const { Sequelize } = require("sequelize")
 const app = express()
+const Queue = require("bull")
+const REDIS_URL = process.env.REDIS_URL
+let workQueue = new Queue("queueEcheanceTodos", REDIS_URL )
+
 app.use(express.json())
 
 const sequelize = new Sequelize(process.env.DATABASE_URL)
@@ -30,6 +34,10 @@ app.post("/todos", async function (req, res) {
       {
         replacements: [req.body.description, req.body.date]
       }
+    )
+    await workQueue.add(
+        { idTodo: todos[0][0].id, dateEcheance: req.body.date },
+        { delay: new Date(req.body.date).getTime() - Date.now()}
     )
   } catch (error) {
     console.error(error)
