@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93142b0c-a8c4-46c3-a8b8-8615bb94f1b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cleanDb.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -11,6 +12,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -38,7 +47,7 @@
       <updated>1663753142920</updated>
       <workItem from="1663753144421" duration="4091000" />
       <workItem from="1663765410707" duration="5672000" />
-      <workItem from="1663832467764" duration="7166000" />
+      <workItem from="1663832467764" duration="9251000" />
     </task>
     <servers />
   </component>
